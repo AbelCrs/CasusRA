@@ -1,2 +1,5 @@
 # CasusRA
-to be added inhoudsopgave
+Inleiding 
+methode 
+resultaten 
+Conclusie
