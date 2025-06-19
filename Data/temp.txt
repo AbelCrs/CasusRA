@@ -1,1 +1,6 @@
+data gebruikt was 
+Homo_sapiens.GRCh38.dna.toplevel.fa (Reference Genome Sequence)
+De referentie-genoomsequentie voor Homo sapiens, gebaseerd op de GRCh38 assembly. Dit FASTA-bestand bevat de volledige DNA-sequenties van alle chromosomen en ongeplaatste scaffolds.
 
+Homo_sapiens.GRCh38.114.gtf
+Het Gene Transfer Format (GTF) annotatiebestand voor Homo sapiens (GRCh38 assembly, Ensembl release 114). Dit bestand bevat de coördinaten en details van genen, transcripten en exonen, essentieel voor de kwantificatie van genexpressie.
