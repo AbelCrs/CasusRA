@@ -15,7 +15,7 @@ Workflow is gevisualiseerd met behulp van deze [flowschema](Assets/Flowschema.pn
 
 Dit onderzoek analyseerde RNA-sequencing data van synoviumbiopten van acht patiënten (4 RA, 4 controle), waarbij RA-patiënten ACPA-positief waren met een diagnose van langer dan 12 maanden. Alle analyses zijn uitgevoerd in **RStudio (v4.4.2)** met pakketten gedownload via `BiocManager (v1.30.26)`.
 
-### **2.1 Data Preprocessing en Count Matrix Generatie**
+### **2.1 Data Preprocessing**
 
 Ruwe sequencing reads zijn verwerkt met `Rsubread (v2.20.0)` en `Rsamtools (v2.22.0)`. Een referentie-index van het humane genoom (`Homo sapiens`, GRCh38.p14, Ensembl: GCA_000001405.29) werd opgebouwd. Reads werden hiertegen uitgelijnd naar BAM-bestanden en vervolgens gesorteerd en geïndexeerd. De `featureCounts` functie van `Rsubread (v2.20.0)` genereerde de 'count matrix', die het aantal gemapte reads per gen per patiënt vastlegt.
 
@@ -27,12 +27,7 @@ De count matrix en patiëntstatus werden geanalyseerd met `DESeq2 (v1.46.0)`. Di
 
 Voor de functionele analyses en visualisaties van de differentieel tot expressie gebrachte genen zijn de volgende R-pakketten en tools gebruikt:
 
-* Een **Volcano Plot** om genexpressie te visualiseren, gegenereerd met `EnhancedVolcano (v1.24.0)`.
-* Een **Gene Ontology (GO) analyse** met `goseq (v1.58.0)`, ondersteund door `geneLenDataBase (v1.42.0)`, `org.Hs.eg.db (v3.20.0)` en `GO.db (v3.20.0)`.
-* Een **KEGG pathway-analyse** met `KEGGREST (v1.46.0)` en visualisatie via `pathview (v1.46.0)`.
-* Algemene data manipulatie en plotten is uitgevoerd met `readr (v2.1.5)`, `dplyr (v1.1.4)` en `ggplot2 (v3.5.2)`.
-
-Deze analyses boden inzicht in significante genveranderingen en de beïnvloede metabole routes in Reumatoïde Artritis.
+Aanvullde pakketen gebruikt: `EnhancedVolcano (v1.24.0)`, `goseq (v1.58.0)`, `geneLenDataBase (v1.42.0)`, `org.Hs.eg.db (v3.20.0)` ,`GO.db (v3.20.0)`, `KEGGREST (v1.46.0)`, `pathview (v1.46.0)`, `readr (v2.1.5)`, `dplyr (v1.1.4)` en `ggplot2 (v3.5.2)`.
 
 Het volledige RStudio-code is [hier](Rscript/CasusRAscript.R) terug te vinden.
 
