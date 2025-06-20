@@ -1,4 +1,4 @@
-# Gedownreguleerde Rac signalering in de B-cel Receptor signaalroute bij Reumatoïde Artritis een RNA-sequencing Analyse. 
+# Gedownreguleerde rac signalering in de B-cel Receptor signaalroute bij reumatoïde artritis een genoom analyse. 
 <p align="center">
   <img src="Assets/Reumathoid.webp" alt="Reuma" width="2000" />
 </p>
