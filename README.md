@@ -31,15 +31,15 @@ Aanvullende pakketen gebruikt: `EnhancedVolcano (v1.24.0)`, `goseq (v1.58.0)`, `
 
 Het volledige RStudio code is [hier](Rscript/CasusRAscript.R) terug te vinden.
 
-### **H3 Resultaten**
+## **3 Resultaten**
 
 De analyse van RNA sequencing data omvatte differentiële genexpressie (volcano plot) en functionele verrijkingsanalyses (GO en KEGG), met een gerichte focus op B cel gerelateerde signalering.
 
-#### **H3.1 Differentiële genexpressie**
+### **3.1 Differentiële genexpressie**
 
 De [Volcano plot](results/Volcano.png) toonde significante verschillen in genexpressie tussen RA patiënten en controles. Genen waren gefilterd gebaseerd op een absolute log2 fold change ($|log2FC|$) van meer dan 1.5 en een gecorrigeerde p waarde (`padj`) van minder dan 0.05.
 
-#### **H3.2 Betrokkenheid van B cel gerelateerde pathways**
+### **3.2 Betrokkenheid van B cel gerelateerde pathways**
 
 Functionele verrijkingsanalyses gaven dieper inzicht in de biologische processen en pathway verstoringen:
 
