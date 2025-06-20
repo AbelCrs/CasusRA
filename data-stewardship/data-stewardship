@@ -1,7 +1,14 @@
-# Datastewardship en Projectbeheer
+Datastewardship en Projectbeheer
 
-Goed omgaan met je data is superbelangrijk voor onderzoek. Zo weet je zeker dat je onderzoek klopt, dat anderen het precies kunnen nadoen en dat alles lekker duidelijk is. Als je je data goed regelt, raak je niks kwijt. Het is ook veel makkelijker om samen te werken, en je onderzoek wordt er gewoon beter van.
+Goed omgaan met je data is superbelangrijk voor onderzoek.
+Zo weet je zeker dat je onderzoek klopt, dat anderen het precies kunnen nadoen en dat alles lekker duidelijk is. 
+Als je je data goed regelt, raak je niks kwijt. Het is ook veel makkelijker om samen te werken, en je onderzoek wordt er gewoon beter van.
 
-Een slimme en duidelijke manier van werken is dan echt nodig. Denk aan een paar vaste mapjes: eentje voor je `data`, eentje voor je `scripts` en eentje voor je `resultaten`. Door dit zo te doen, en je bestanden ook duidelijke namen te geven (met een versienummer erbij), zie je meteen waar alles staat. Je vindt dingen sneller en maakt niet per ongeluk dubbele bestanden aan. En zet ook altijd opmerkingen in je code, bij elke functie of stap. Dat helpt enorm om je analyse later weer precies zo te doen.
+Een slimme en duidelijke manier van werken is dan echt nodig. 
+Denk aan een paar vaste mapjes: eentje voor je `data`, eentje voor je `scripts` en eentje voor je `resultaten`. 
+door dit zo te doen, en je bestanden ook duidelijke namen te geven (met een versienummer erbij), zie je meteen waar alles staat. Je vindt dingen sneller en maakt niet per ongeluk dubbele bestanden aan. 
+En zet ook altijd opmerkingen in je code, bij elke functie of stap. Dat helpt enorm om je analyse later weer precies zo te doen.
 
-Daarnaast heb je versiebeheer, zoals met GitHub. Daar wordt dan precies bijgehouden wie wat wanneer heeft aangepast aan je code en bestanden. Zo kun je altijd makkelijk terug naar een oude versie als er iets misgaat – dat is echt superhandig voor replicatie. En via GitHub kun je je code en data ook heel makkelijk delen met anderen. Dat zorgt voor 'open data' en maakt je hele onderzoek een stuk duidelijker voor iedereen.
+Daarnaast heb je versiebeheer, zoals met GitHub. 
+Daar wordt dan precies bijgehouden wie wat wanneer heeft aangepast aan je code en bestanden. Zo kun je altijd makkelijk terug naar een oude versie als er iets misgaat dat is echt superhandig voor replicatie. 
+En via GitHub kun je je code en data ook heel makkelijk delen met anderen. Dat zorgt voor 'open data' en maakt je hele onderzoek een stuk duidelijker voor iedereen.
