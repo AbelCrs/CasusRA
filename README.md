@@ -13,19 +13,19 @@ Reumatoïde Artritis (RA) is een chronische, inflammatoire auto immuunziekte die
 
 Workflow is gevisualiseerd met behulp van deze [flowschema](Assets/Flowschema2.png).
 
-Dit onderzoek analyseerde RNA-sequencing data van synoviumbiopten van acht patiënten (4 RA, 4 controle), waarbij RA-patiënten ACPA-positief waren met een diagnose van langer dan 12 maanden. Alle analyses zijn uitgevoerd in **RStudio (v4.4.2)** met pakketten gedownload via `BiocManager (v1.30.26)`.
+Dit onderzoek analyseerde RNA sequencing data van synoviumbiopten van acht patiënten (4 RA, 4 controle), waarbij RA patiënten ACPA positief waren met een diagnose van langer dan 12 maanden. Alle analyses zijn uitgevoerd in **RStudio (v4.4.2)** met pakketten gedownload via `BiocManager (v1.30.26)`.
 
 ### **2.1 Data Preprocessing**
 
-Ruwe sequencing reads zijn verwerkt met `Rsubread (v2.20.0)` en `Rsamtools (v2.22.0)`. Een referentie-index van het humane genoom (`Homo sapiens`, GRCh38.p14, Ensembl: GCA_000001405.29) werd opgebouwd. Reads werden hiertegen uitgelijnd naar BAM-bestanden en vervolgens gesorteerd en geïndexeerd. De `featureCounts` functie van `Rsubread (v2.20.0)` genereerde de 'count matrix', die het aantal gemapte reads per gen per patiënt vastlegt.
+Ruwe sequencing reads zijn verwerkt met `Rsubread (v2.20.0)` en `Rsamtools (v2.22.0)`. Een referentie index van het humane genoom (`Homo sapiens`, GRCh38.p14, Ensembl: GCA_000001405.29) werd opgebouwd. Reads werden hiertegen uitgelijnd naar BAM bestanden en vervolgens gesorteerd en geïndexeerd. De `featureCounts` functie van `Rsubread (v2.20.0)` genereerde de 'count matrix', die het aantal gemapte reads per gen per patiënt vastlegt.
 
 ### **2.2 Differentiële Genexpressie Analyse**
 
-De count matrix en patiëntstatus werden geanalyseerd met `DESeq2 (v1.46.0)`. Dit resulteerde in fold change-waarden, p-waarden en Benjamini-Hochberg gecorrigeerde p-waarden voor differentiële genexpressie, waarmee significante veranderingen werden geïdentificeerd.
+De count matrix en patiëntstatus werden geanalyseerd met `DESeq2 (v1.46.0)`. Dit resulteerde in fold change waarden, p waarden en Benjamini Hochberg gecorrigeerde p waarden voor differentiële genexpressie, waarmee significante veranderingen werden geïdentificeerd.
 
 ### **2.3 Functionele Analyse en Visualisatie**
 
-Voor de functionele analyses en visualisaties van de differentieel tot expressie gebrachte genen zijn de volgende R-pakketten en tools gebruikt:
+Voor de functionele analyses en visualisaties van de differentieel tot expressie gebrachte genen zijn de volgende R pakketten en tools gebruikt:
 
 Aanvullende pakketen gebruikt: `EnhancedVolcano (v1.24.0)`, `goseq (v1.58.0)`, `geneLenDataBase (v1.42.0)`, `org.Hs.eg.dB (v3.20.0)` ,`GO.dB (v3.20.0)`, `KEGGREST (v1.46.0)`, `pathview (v1.46.0)`, `readr (v2.1.5)`, `dplyr (v1.1.4)` en `ggplot2 (v3.5.2)`.
 
