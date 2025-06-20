@@ -34,7 +34,7 @@ Functionele analyses en visualisaties omvatten:
 
 Deze analyses boden inzicht in significante genveranderingen en de beïnvloede metabole routes in Reumatoïde Artritis.
 
-Het volledige RStudio-code is  terug te vinden.
+Het volledige RStudio-code is [hier](Rscript/Rscript) terug te vinden.
 
 ## 3. Resultaten
 
