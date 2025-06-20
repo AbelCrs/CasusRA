@@ -5,25 +5,25 @@
 
 ------
 
-## 1. Inleiding
+## **1. Inleiding**
 
 Reumatoïde Artritis (RA) is een chronische, inflammatoire auto immuunziekte die wereldwijd miljoenen mensen treft. De aandoening kenmerkt zich door pijnlijke zwelling in de gewrichten, wat op termijn kan leiden tot ernstige gewrichtsschade en functieverlies, en heeft een aanzienlijke impact op de levenskwaliteit van patiënten (Aletaha et al., 2010). De precieze oorzaak van RA is complex, maar een ontregeld immuunsysteem speelt een centrale rol. B cellen, T cellen en pro inflammatoire cytokines dragen bij aan de aanhoudende ontsteking. Het verkrijgen van een dieper inzicht in de moleculaire mechanismen die ten grondslag liggen aan RA is essentieel voor de ontwikkeling van effectievere diagnostische methoden en gerichte therapieën. Het doel van dit onderzoek was dan ook het identificeren van differentieel tot expressie gebrachte genen bij RA patiënten in vergelijking met gezonde individuelen, om zo potentiële biomarkers en ziektegerelateerde pathways te ontdekken. 
 
-## 2. Methode
+## **2. Methode**
 
 Workflow is gevisualiseerd met behulp van deze [flowschema](Assets/Flowschema.png)
 
 Dit onderzoek analyseerde RNA-sequencing data van synoviumbiopten van acht patiënten (4 RA, 4 controle), waarbij RA-patiënten ACPA-positief waren met een diagnose van langer dan 12 maanden. De RNA-sequenties werden verkregen via het **Illumina** platform. Alle analyses zijn uitgevoerd in **RStudio (v4.4.2)** met pakketten gedownload via `BiocManager (v1.30.26)`.
 
-### 2.1 Data Preprocessing en Count Matrix Generatie
+### **2.1 Data Preprocessing en Count Matrix Generatie**
 
 Ruwe sequencing reads zijn verwerkt met `Rsubread (v2.20.0)` en `Rsamtools (v2.22.0)`. Een referentie-index van het humane genoom (`Homo sapiens`, GRCh38.p14, Ensembl: GCA_000001405.29) werd opgebouwd. Reads werden hiertegen uitgelijnd naar BAM-bestanden en vervolgens gesorteerd en geïndexeerd. De `featureCounts` functie van `Rsubread (v2.20.0)` genereerde de 'count matrix', die het aantal gemapte reads per gen per patiënt vastlegt.
 
-### 2.2 Differentiële Genexpressie Analyse
+### **2.2 Differentiële Genexpressie Analyse**
 
 De count matrix en patiëntstatus werden geanalyseerd met `DESeq2 (v1.46.0)`. Dit resulteerde in fold change-waarden, p-waarden en Benjamini-Hochberg gecorrigeerde p-waarden voor differentiële genexpressie, waarmee significante veranderingen werden geïdentificeerd.
 
-### 2.3 Functionele Analyse en Visualisatie
+### **2.3 Functionele Analyse en Visualisatie**
 
 Functionele analyses en visualisaties omvatten:
 * Een **Volcano Plot** om genexpressie te visualiseren, gegenereerd met `EnhancedVolcano (v1.24.0)`.
@@ -36,9 +36,23 @@ Deze analyses boden inzicht in significante genveranderingen en de beïnvloede m
 
 Het volledige RStudio-code is [hier](Rscript/CasusRAscript.R) terug te vinden.
 
-## 3. Resultaten
+### **H3 Resultaten**
 
-De resultaten tonen significante verschillen in genexpressiepatronen tussen RA patiënten en gezonde controlepersonen. De Volcano plot [bekijk de Volcano Plot hier](results/Screenshot%202025-06-08%20154951.png)  visualiseert deze differentiële genexpressie over alle 29.407 genen. Een aantal genen toonde significant verhoogde of verlaagde expressie, gedefinieerd door een absolute log2 fold change van meer dan 1.5 en een padj van minder dan 0.05. Dit wijst op moleculaire veranderingen kenmerkend voor RA. De GO analyse [bekijk de Top 10 Verrijkte GO Termen hier](results/Screenshot%252025-06-08%2520154327.png) identificeerde meer aanwezige biologische processen. Zoals verwacht bij een auto immuunziekte, dit waren voornamelijk  de immunoglobulin complex, adaptive immune response en B cel mediated immuniteit. De hoge statistische significantie bevestigt een fundamenteel ander immuunsysteem bij RA. De KEGG pathway analyse [bekijk de B cel Receptor Signaalroute hier](results/hsa04662.pathview.png) liet zien dat de B cel Receptor Signaalroute (hsa04662) genen bevatte die significant verschillend tot expressie kwamen. Binnen de keten Antigen , BTK , BLNK , VAV, Bam32 en Rac waren BTK, BLNK en VAV upregulated (rood). Echter, **Rac** was significant downregulated (groen), met een log2 fold change van ongeveer -3.
+De analyse van RNA-sequencing data omvatte differentiële genexpressie (volcano plot) en functionele verrijkingsanalyses (GO en KEGG), met een gerichte focus op B-cel gerelateerde signalering.
+
+#### **H3.1 Differentiële genexpressie**
+
+De ([Volcano plot]()) toonde significante verschillen in genexpressie tussen RA-patiënten en controles. Genen waren gefilterd gebaseerd op een absolute log2 fold change ($|log2FC|$) van meer dan 1.5 en een gecorrigeerde p-waarde (`padj`) van minder dan 0.05.
+
+#### **H3.2 Betrokkenheid van B-cel gerelateerde pathways**
+
+Functionele verrijkingsanalyses gaven dieper inzicht in de biologische processen en pathway verstoringen:
+
+* **Gene Ontology (GO) Termen:**
+    De ([GO-analyse]()) identificeerde significant verrijkte termen zoals **immunoglobulin complex**, **adaptive immune response** en **B-cel mediated immuniteit**. Deze bevindingen onderstrepen de prominente rol van het immuunsysteem, en specifiek B-cellen, bij RA.
+
+* **KEGG Pathway Analyse: B-cel Receptor Signaalroute en Rac**
+    De ([KEGG-analyse](Resultaten/hsa04662.png)) wees op de **B-cel Receptor Signaalroute (hsa04662)** als significant verstoord . Binnen deze route voor B-cel activatie werden genen zoals **BTK, BLNK en VAV 'upregulated'**. Echter, het gen **Rac** was significant **'downregulaated'** met een log2 fold change van ongeveer -3. Deze specifieke 'downregulation' van Rac, te midden van de 'upregulation" van andere componenten in dezelfde pathway, suggereert een gerichte verstoring in de B
 
 ## 4. Conclusie
 
