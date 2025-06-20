@@ -49,7 +49,7 @@ De ([Volcano plot](results/Volcano.png)) toonde significante verschillen in gene
 Functionele verrijkingsanalyses gaven dieper inzicht in de biologische processen en pathway verstoringen:
 
 * **Gene Ontology (GO) Termen:**
-    De ([GO-analyse]()) identificeerde significant verrijkte termen zoals **immunoglobulin complex**, **adaptive immune response** en **B-cel mediated immuniteit**. Deze bevindingen onderstrepen de prominente rol van het immuunsysteem, en specifiek B-cellen, bij RA.
+    De ([GO-analyse](results/Go-analyse.png)) identificeerde significant verrijkte termen zoals **immunoglobulin complex**, **adaptive immune response** en **B-cel mediated immuniteit**. Deze bevindingen onderstrepen de prominente rol van het immuunsysteem, en specifiek B-cellen, bij RA.
 
 * **KEGG Pathway Analyse: B-cel Receptor Signaalroute en Rac**
     De ([KEGG-analyse](Resultaten/hsa04662.png)) wees op de **B-cel Receptor Signaalroute (hsa04662)** als significant verstoord . Binnen deze route voor B-cel activatie werden genen zoals **BTK, BLNK en VAV 'upregulated'**. Echter, het gen **Rac** was significant **'downregulaated'** met een log2 fold change van ongeveer -3. Deze specifieke 'downregulation' van Rac, te midden van de 'upregulation" van andere componenten in dezelfde pathway, suggereert een gerichte verstoring in de B
