@@ -13,7 +13,7 @@ Reumatoïde Artritis (RA) is een chronische, inflammatoire auto immuunziekte die
 
 Workflow is gevisualiseerd met behulp van deze [flowschema](Assets/Flowschema.png)
 
-Dit onderzoek analyseerde RNA-sequencing data van synoviumbiopten van acht patiënten (4 RA, 4 controle), waarbij RA-patiënten ACPA-positief waren met een diagnose van langer dan 12 maanden. De RNA-sequenties werden verkregen via het **Illumina** platform. Alle analyses zijn uitgevoerd in **RStudio (v4.4.2)** met pakketten gedownload via `BiocManager (v1.30.26)`.
+Dit onderzoek analyseerde RNA-sequencing data van synoviumbiopten van acht patiënten (4 RA, 4 controle), waarbij RA-patiënten ACPA-positief waren met een diagnose van langer dan 12 maanden. Alle analyses zijn uitgevoerd in **RStudio (v4.4.2)** met pakketten gedownload via `BiocManager (v1.30.26)`.
 
 ### **2.1 Data Preprocessing en Count Matrix Generatie**
 
@@ -25,11 +25,11 @@ De count matrix en patiëntstatus werden geanalyseerd met `DESeq2 (v1.46.0)`. Di
 
 ### **2.3 Functionele Analyse en Visualisatie**
 
-Functionele analyses en visualisaties omvatten:
+Voor de functionele analyses en visualisaties van de differentieel tot expressie gebrachte genen zijn de volgende R-pakketten en tools gebruikt:
+
 * Een **Volcano Plot** om genexpressie te visualiseren, gegenereerd met `EnhancedVolcano (v1.24.0)`.
 * Een **Gene Ontology (GO) analyse** met `goseq (v1.58.0)`, ondersteund door `geneLenDataBase (v1.42.0)`, `org.Hs.eg.db (v3.20.0)` en `GO.db (v3.20.0)`.
 * Een **KEGG pathway-analyse** met `KEGGREST (v1.46.0)` en visualisatie via `pathview (v1.46.0)`.
-* Aanvullende gene set testing is uitgevoerd met `msigdbr (v24.1.0)`.
 * Algemene data manipulatie en plotten is uitgevoerd met `readr (v2.1.5)`, `dplyr (v1.1.4)` en `ggplot2 (v3.5.2)`.
 
 Deze analyses boden inzicht in significante genveranderingen en de beïnvloede metabole routes in Reumatoïde Artritis.
