@@ -42,7 +42,7 @@ De analyse van RNA-sequencing data omvatte differentiële genexpressie (volcano 
 
 #### **H3.1 Differentiële genexpressie**
 
-De ([Volcano plot]()) toonde significante verschillen in genexpressie tussen RA-patiënten en controles. Genen waren gefilterd gebaseerd op een absolute log2 fold change ($|log2FC|$) van meer dan 1.5 en een gecorrigeerde p-waarde (`padj`) van minder dan 0.05.
+De ([Volcano plot](results/Volcano.png)) toonde significante verschillen in genexpressie tussen RA-patiënten en controles. Genen waren gefilterd gebaseerd op een absolute log2 fold change ($|log2FC|$) van meer dan 1.5 en een gecorrigeerde p-waarde (`padj`) van minder dan 0.05.
 
 #### **H3.2 Betrokkenheid van B-cel gerelateerde pathways**
 
