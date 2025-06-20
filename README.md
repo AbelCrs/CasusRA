@@ -27,7 +27,7 @@ De count matrix en patiëntstatus werden geanalyseerd met `DESeq2 (v1.46.0)`. Di
 
 Voor de functionele analyses en visualisaties van de differentieel tot expressie gebrachte genen zijn de volgende R-pakketten en tools gebruikt:
 
-Aanvullde pakketen gebruikt: `EnhancedVolcano (v1.24.0)`, `goseq (v1.58.0)`, `geneLenDataBase (v1.42.0)`, `org.Hs.eg.db (v3.20.0)` ,`GO.db (v3.20.0)`, `KEGGREST (v1.46.0)`, `pathview (v1.46.0)`, `readr (v2.1.5)`, `dplyr (v1.1.4)` en `ggplot2 (v3.5.2)`.
+Aanvullende pakketen gebruikt: `EnhancedVolcano (v1.24.0)`, `goseq (v1.58.0)`, `geneLenDataBase (v1.42.0)`, `org.Hs.eg.db (v3.20.0)` ,`GO.db (v3.20.0)`, `KEGGREST (v1.46.0)`, `pathview (v1.46.0)`, `readr (v2.1.5)`, `dplyr (v1.1.4)` en `ggplot2 (v3.5.2)`.
 
 Het volledige RStudio-code is [hier](Rscript/CasusRAscript.R) terug te vinden.
 
@@ -37,17 +37,17 @@ De analyse van RNA-sequencing data omvatte differentiële genexpressie (volcano 
 
 #### **H3.1 Differentiële genexpressie**
 
-De ([Volcano plot](results/Volcano.png)) toonde significante verschillen in genexpressie tussen RA-patiënten en controles. Genen waren gefilterd gebaseerd op een absolute log2 fold change ($|log2FC|$) van meer dan 1.5 en een gecorrigeerde p-waarde (`padj`) van minder dan 0.05.
+De [Volcano plot](results/Volcano.png) toonde significante verschillen in genexpressie tussen RA-patiënten en controles. Genen waren gefilterd gebaseerd op een absolute log2 fold change ($|log2FC|$) van meer dan 1.5 en een gecorrigeerde p-waarde (`padj`) van minder dan 0.05.
 
 #### **H3.2 Betrokkenheid van B-cel gerelateerde pathways**
 
 Functionele verrijkingsanalyses gaven dieper inzicht in de biologische processen en pathway verstoringen:
 
 * **Gene Ontology (GO) Termen:**
-    De ([GO-analyse](results/Go-analyse.png)) identificeerde significant verrijkte termen zoals **immunoglobulin complex**, **adaptive immune response** en **B-cel mediated immuniteit**. Deze bevindingen onderstrepen de prominente rol van het immuunsysteem, en specifiek B-cellen, bij RA.
+    De [GO-analyse](results/Go-analyse.png) identificeerde significant verrijkte termen zoals **immunoglobulin complex**, **adaptive immune response** en **B-cel mediated immuniteit**. Deze bevindingen onderstrepen de prominente rol van het immuunsysteem, en specifiek B-cellen, bij RA.
 
 * **KEGG Pathway Analyse: B-cel Receptor Signaalroute en Rac**
-    De ([KEGG-analyse](Resultaten/hsa04662.png)) wees op de **B-cel Receptor Signaalroute (hsa04662)** als significant verstoord . Binnen deze route voor B-cel activatie werden genen zoals **BTK, BLNK en VAV 'upregulated'**. Echter, het gen **Rac** was significant **'downregulaated'** met een log2 fold change van ongeveer -3. Deze specifieke 'downregulation' van Rac, te midden van de 'upregulation" van andere componenten in dezelfde pathway, suggereert een gerichte verstoring in de B
+    De [KEGG-analyse](Resultaten/hsa04662.png) wees op de **B-cel Receptor Signaalroute (hsa04662)** als significant verstoord. Binnen deze route voor B-cel activatie werden genen zoals **BTK, BLNK en VAV 'upregulated'**. Echter, het gen **Rac** was significant **'downregulated'** met een log2 fold change van ongeveer -3. Deze specifieke 'downregulation' van Rac, te midden van de 'upregulation" van andere componenten in dezelfde pathway, suggereert een gerichte verstoring in de actin cytoskelet van b-cellen.
 
 ## 4. Conclusie
 
