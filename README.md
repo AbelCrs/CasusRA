@@ -11,7 +11,7 @@ Reumatoïde Artritis (RA) is een chronische, inflammatoire auto immuunziekte die
 
 ## **2. Methode**
 
-Workflow is gevisualiseerd met behulp van deze [flowschema](Assets/Flowschema2.png).
+Workflow is gevisualiseerd met deze [flowschema](Assets/Flowschema2.png).
 
 Dit onderzoek analyseerde RNA sequencing data van synoviumbiopten van acht patiënten (4 RA, 4 controle), waarbij RA patiënten ACPA positief waren met een diagnose van langer dan 12 maanden. Alle analyses zijn uitgevoerd in **RStudio (v4.4.2)** met pakketten gedownload via `BiocManager (v1.30.26)`.
 
