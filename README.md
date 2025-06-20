@@ -1,4 +1,4 @@
-# Downreguleerde rac signalering in de B-cel receptor signaalroute bij reumatoïde artritis een genoom analyse. 
+# Downreguleerde rac signalering in de b cel receptor signaalroute bij reumatoïde artritis een genoom analyse. 
 <p align="center">
   <img src="Assets/Reumathoid.webp" alt="Reuma" width="2000" />
 </p>
@@ -33,22 +33,22 @@ Het volledige RStudio-code is [hier](Rscript/CasusRAscript.R) terug te vinden.
 
 ### **H3 Resultaten**
 
-De analyse van RNA-sequencing data omvatte differentiële genexpressie (volcano plot) en functionele verrijkingsanalyses (GO en KEGG), met een gerichte focus op B-cel gerelateerde signalering.
+De analyse van RNA-sequencing data omvatte differentiële genexpressie (volcano plot) en functionele verrijkingsanalyses (GO en KEGG), met een gerichte focus op b cel gerelateerde signalering.
 
 #### **H3.1 Differentiële genexpressie**
 
 De [Volcano plot](results/Volcano.png) toonde significante verschillen in genexpressie tussen RA-patiënten en controles. Genen waren gefilterd gebaseerd op een absolute log2 fold change ($|log2FC|$) van meer dan 1.5 en een gecorrigeerde p-waarde (`padj`) van minder dan 0.05.
 
-#### **H3.2 Betrokkenheid van B-cel gerelateerde pathways**
+#### **H3.2 Betrokkenheid van b cel gerelateerde pathways**
 
 Functionele verrijkingsanalyses gaven dieper inzicht in de biologische processen en pathway verstoringen:
 
 * **Gene Ontology (GO) Termen:**
-    De [GO-analyse](results/Go-analyse.png) identificeerde significant verrijkte termen zoals **immunoglobulin complex**, **adaptive immune response** en **B-cel mediated immuniteit**. Deze bevindingen onderstrepen de prominente rol van het immuunsysteem, en specifiek B-cellen, bij RA.
+    De [GO-analyse](results/Go-analyse.png) identificeerde significant verrijkte termen zoals **immunoglobulin complex**, **adaptive immune response** en **b cel mediated immuniteit**. Deze bevindingen onderstrepen de prominente rol van het immuunsysteem, en specifiek b cellen, bij RA.
 
-* **KEGG Pathway Analyse: B-cel Receptor Signaalroute en Rac**
-    De [KEGG-analyse](Resultaten/hsa04662.png) wees op de **B-cel Receptor Signaalroute (hsa04662)** als significant verstoord. Binnen deze route voor B-cel activatie werden genen zoals **BTK, BLNK en VAV 'upregulated'**. Echter, het gen **Rac** was significant **'downregulated'** met een log2 fold change van ongeveer -3. Deze specifieke 'downregulation' van Rac, te midden van de 'upregulation" van andere componenten in dezelfde pathway, suggereert een gerichte verstoring in de actin cytoskelet van b-cellen.
+* **KEGG Pathway Analyse: b cel Receptor Signaalroute en Rac**
+    De [KEGG-analyse](Resultaten/hsa04662.png) wees op de **b cel Receptor Signaalroute (hsa04662)** als significant verstoord. Binnen deze route voor b cel activatie werden genen zoals **BTK, BLNK en VAV 'upregulated'**. Echter, het gen **Rac** was significant **'downregulated'** met een log2 fold change van ongeveer -3. Deze specifieke 'downregulation' van Rac, te midden van de 'upregulation" van andere componenten in dezelfde pathway, suggereert een gerichte verstoring in de actin cytoskelet van b cellen.
 
 ## 4. Conclusie
 
-De resultaten bevestigen verschillen in genexpressie tussen RA en gezonde personen. Velen zijn betrokken bij afweersysteem en ontstekingsreacties. GO analyse wees op verstoorde immuunrespons en cytokine activiteit bij reumapatiënten, wat duidt op een afwijkend immuunsysteem. De KEGG analyse benadrukt verstoringen in de B cel Receptor Signaalroute, met name de downregulation van Rac. Deze specifieke verstoring in Rac signalering kan leiden tot abnormale B celfunctie zoals veranderde migratie of defecten in de immuunsynaps, wat bijdraagt aan de complexe pathogenese van RA. Concluderend geeft dit onderzoek inzicht in RA op moleculair niveau, waarbij het afweersysteem een grote rol speelt. Deze resultaten kunnen helpen bij het vinden van nieuwe medicijnen of biomarkers. 
+De resultaten bevestigen verschillen in genexpressie tussen RA en gezonde personen. Velen zijn betrokken bij afweersysteem en ontstekingsreacties. GO analyse wees op verstoorde immuunrespons en cytokine activiteit bij reumapatiënten, wat duidt op een afwijkend immuunsysteem. De KEGG analyse benadrukt verstoringen in de B cel Receptor Signaalroute, met name de downregulation van Rac. Deze specifieke verstoring in Rac signalering kan leiden tot abnormale B cel functie zoals veranderde migratie of defecten in de immuunsynaps, wat bijdraagt aan de complexe pathogenese van RA. Concluderend geeft dit onderzoek inzicht in RA op moleculair niveau, waarbij het afweersysteem een grote rol speelt. Deze resultaten kunnen helpen bij het vinden van nieuwe medicijnen of biomarkers. 
