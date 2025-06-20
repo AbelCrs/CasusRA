@@ -1,6 +1,6 @@
 # Gedownreguleerde Rac signalering in de B-cel Receptor signaalroute bij Reumatoïde Artritis een RNA-sequencing Analyse. 
 <p align="center">
-  <img src="Assets/" alt="Reuma" width="2000" />
+  <img src="Assets/Reumathoid.webp" alt="Reuma" width="2000" />
 </p>
 
 ------
